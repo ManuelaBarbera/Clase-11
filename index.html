@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="/contacto" method="POST">
+        <P></P>CUALQUIER TEXTO</P>
+        <input type= "text">
+        <fieldset> 
+            
+        <label> NOMBRE
+        <input placeholder="Escribí tu nombre" type="text" name="nombre">
+        </label>
+
+        <label for="apellido_id"> APELLIDO
+        <input id= "apellido_id" value="Barbera" type="text" name="apellido">
+        </label>
+
+        <p>E-mail
+        <input type="email" name="email">
+        </p>
+        <p> EDAD
+        <input required type="number" name="edad">
+        </fieldset>
+    
+        </p>
+        <p>CONTRASEÑA
+        <input type="password" name="contraseña">
+        </p>
+        <p>CUIT
+        <input maxlength="11" type="number" name= "cuit">
+        </p>
+        <input type="submit" value= "enviar">
+    
+        <button> Botón </button>
+    </form>
+
+    <form>
+        <p> Acepto términos y condiciones
+        <input checked type="radio" name="acepto" value="yes"> Si
+        <input type="radio" name="acepto" value= "no"> No
+    </p> 
+    <p> Le gustan los:
+        <input type="checkbox" name="pet" value="dog"> Perros
+        <input type="checkbox" name="pet"value="cat"> Gatos
+        <input type="checkbox" name="pet" value="bird"> Canarios
+        <input type="checkbox" name="pet" value= "others"> Otros
+    </p>
+
+    <p> Fecha de nacimiento
+    <input type="date">
+    </p>
+    <p>
+    <input type="url"> Página web
+    </p> 
+
+    <p>
+    <textarea rows="8" cols="50" placeholder="Describi" name="text area"> </textarea>
+    </p>
+
+    <p> Seleccione una ciudad 
+    <select name="ciudades">
+        <option>Ciudad</option>
+        <option>Buenos Aires </option>
+        <option>La Plata</option>
+        <option value="MDQ"> Mar del Plata</option>
+        <option>Miramar</option>
+    </select>
+    </p>
+
+    <p>
+    <input type="file" > Ajuntar archivos
+    </p>
+
+
+    </form>
+
+
+
+</body>
+</html>
